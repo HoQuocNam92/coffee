@@ -25,4 +25,8 @@
         padding: 40px 20px !important;
 
     }
+
+    a {
+        color: #fff !important;
+    }
 }
