@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+
+    .layout,
+    .text-footer,
+    #content .product-section {
+        display: block !important;
+
+    }
+
+    #header,
+    .text-section .text,
+    .location-section,
+    .text-loaction button {
+        display: none !important;
+    }
+
+    .card {
+        padding: 0 !important;
+    }
+
+
+    .blog-section,
+    .text-section,
+    #footer {
+        padding: 40px 20px !important;
+
+    }
+}

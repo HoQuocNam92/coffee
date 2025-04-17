@@ -1,0 +1,570 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Winky Rough", sans-serif;
+
+}
+
+#container {}
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
+#header {
+    background-color: #edf3f9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+
+#header li {
+    list-style: none;
+}
+
+#header a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1170px;
+    max-width: 100%;
+    min-height: 60px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0;
+    width: 300px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu>li {
+    padding: 19px 16px;
+    cursor: pointer;
+
+}
+
+.menu .menu-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu li:hover .menu-link {
+    color: #eb852d !important;
+}
+
+.menu .icon-menu {
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sub menu */
+
+
+
+
+.submenu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-width: 1905px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 28px 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease-in-out;
+
+}
+
+
+
+.submenu .title {
+    font-size: 16px !important;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.submenu>li {
+    text-align: left;
+    padding: 12px 19px;
+}
+
+
+.submenu .list-menu {
+    margin-top: 16px;
+}
+
+
+.submenu .list-menu>li {
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.submenu .list-menu a {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.moreHome .home>li {
+    width: 380px;
+}
+
+.moreMenu .menu>li {
+    width: 130px;
+
+
+}
+
+
+
+.submenu>li:hover .title {
+    color: #eb852d !important;
+
+}
+
+.submenu .list-menu li:hover a {
+    color: #eb852d !important;
+
+}
+
+
+
+.moreMenu:hover .submenu,
+.moreHome:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner */
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product section */
+
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+}
+
+.card {
+    border-radius: 16px;
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    background: #fff;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+.card.large {
+    grid-column: span 2;
+    padding: 0;
+}
+
+.card.large img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card .name {
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.card .price {
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Text section */
+
+.text-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.text-section img {
+    max-width: 100%;
+}
+
+.text-section .text {
+    position: absolute;
+    top: 20%;
+    right: 14%;
+    width: 588px;
+
+}
+
+.text .desc {
+    padding: 15px 0;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+}
+
+.text .btn {
+    color: #fff;
+    background-color: #778B37;
+    max-width: 587px;
+    padding: 14px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.text .btn:hover {
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.location-section {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.text-loaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 336.562px;
+    width: 80%;
+}
+
+.location-section img {
+    width: 1072px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.text-loaction h3 {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.85)
+}
+
+.text-loaction p {
+    font-size: 18px;
+    height: 72px;
+    color: rgba(0, 0, 0, 0.85);
+    padding-top: 8px;
+}
+
+.text-loaction button {
+    color: #fff;
+    background-color: #C8070F;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px 25px;
+    border: none;
+    width: 280px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About  */
+.blog-section {
+    background-color: rgb(255, 247, 230);
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 68px;
+}
+
+.blog-section h2 {
+    padding: 24px 0;
+}
+
+.blog {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.blog h3 {
+    margin: 24px 0;
+    font-size: 24px;
+}
+
+.layout {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.layout .item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.layout p {
+    font-size: 14px;
+}
+
+.layout h2 {
+    font-size: 18px;
+}
+
+
+.layout .item img:hover {
+    transform: scale(1.1)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    background-color: #000000D9;
+    font-size: 12px;
+    color: #fff;
+    padding: 24px 0;
+}
+
+#footer h2 {
+    font-size: 14px !important;
+    margin-bottom: 8px;
+}
+
+#footer .footer-section {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.text-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #fff;
+}
+
+.text-footer i {
+    margin-right: 8px;
+}
+
+.text-footer p {
+    margin-bottom: 8px;
+}
+
+.text-desc {
+    margin-top: 8px;
+    font-size: 12px;
+}
